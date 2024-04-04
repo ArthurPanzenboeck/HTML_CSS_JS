@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="formContainer">
+        <form id="form">
+            <div class="step">
+                <h2>Etapa 1</h2>
+                <input type="text" placeholder="Nome">
+                <input type="button" value="proximo" onclick="nextStep(1)">
+            </div>
+
+            <div class="step">
+                <h2>Etapa 2</h2>
+                <input type="email" placeholder="Email">
+                <input type="button" value="proximo" onclick="nextStep(2)">
+            </div>
+
+            <div class="step">
+                <h2>Etapa 3</h2>
+                <input type="password" placeholder="Senha">
+                <input type="button" value="proximo" onclick="nextStep(3)">
+            </div>
+
+            <div class="step">
+                <h2>Etapa 4</h2>
+                <input type="text" placeholder="Endereço">
+                <input type="button" value="proximo" onclick="nextStep(4)">
+            </div>
+
+            <div class="step">
+                <h2>Etapa 5</h2>
+                <input type="tel" placeholder="Telefone">
+                <input type="button" value="proximo" onclick="nextStep(5)">
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</htmle

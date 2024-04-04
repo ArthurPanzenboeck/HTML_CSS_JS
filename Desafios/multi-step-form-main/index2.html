@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto-layout-forf-mult-stap</title>
+    <link rel="stylesheet" href="./assets/css/estilo2.css">
+    <link rel="stylesheet" href="./assets/css/fontes.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+</head>
+
+<body>
+    <div class="d1">
+        <div class="d2">
+            <img class="i1" src="./assets/images/bg-sidebar-desktop.svg" alt="">
+            <div class="d2-1">
+
+                <div class="d2-1-1-1">
+                    <div class="d2-pn">1</div>
+                    <div class="d2-1-1-1-1">
+                        <p class="d1-p1">stap 1</p>
+                        <p class="d1-p2">Your info</p>
+                    </div>
+                </div>
+                <div class="d2-1-1-1">
+                    <div class="d2-pn">2</div>
+                    <div class="d2-1-1-1-1">
+                        <p class="d1-p1">stap 2</p>
+                        <p class="d1-p2">Select plan</p>
+                    </div>
+                </div>
+                <div class="d2-1-1-1">
+                    <div class="d2-pn">3</div>
+                    <div class="d2-1-1-1-1">
+                        <p class="d1-p1">stap 3</p>
+                        <p class="d1-p2">Add-ons</p>
+                    </div>
+                </div>
+                <div class="d2-1-1-1">
+                    <div class="d2-pn">4</div>
+                    <div class="d2-1-1-1-1">
+                        <p class="d1-p1">stap 4</p>
+                        <p class="d1-p2">Summary</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="d3">
+            <div class="d3-center">
+                <form action="">
+                    <fieldset class="step" id="s1">
+                        <div class="div-steps">
+                            <div class="titulos">
+                                <h1>Personal info</h1>
+                                <p class="info1">Please provide your name, email address, and phone number.</p>
+                            </div>
+                            <div class="conteudo">
+                                <label class="lstep1" for="inome">
+                                    <p>Name</p>
+                                </label>
+                                <input class="istep1" type="text" name="nome" id="inome" placeholder="e.g Stephen King">
+                                <label class="lstep1" for="iemail">
+                                    <p>Email Address</p>
+                                </label>
+                                <input class="istep1" type="email" name="email" id="iemail"
+                                    placeholder="e.g satephenking@lorem.com">
+                                <label class="lstep1" for="itel">
+                                    <p>Phone Number</p>
+                                </label>
+                                <input class="istep1" type="tel" name="tel" id="itel" placeholder="e.g +1 234 567 890">
+                            </div>
+                            <div class="btns" id="first-btn"><input class="np" type="button" value="Next Step"></div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="step" id="s2">
+                        <div class="div-steps">
+                            <div class="titulos">
+                                <h1>Select your plan</h1>
+                                <p class="info1">you have the option of monthly or yearly billing.</p>
+                            </div>
+                            <div class="conteudo">
+                                <div id="content-plan">
+                                    <button class="btn-plan" type="button"><img src="./assets/images/icon-arcade.svg"
+                                            alt=""><br>
+                                        <div>Arcade <p>$9/mo</p>
+                                        </div>
+                                    </button>
+                                    <button class="btn-plan" type="button"><img src="./assets/images/icon-advanced.svg"
+                                            alt=""><br>
+                                        <div>Advanced <p>$12/mo</p>
+                                        </div>
+                                    </button>
+                                    <button class="btn-plan" type="button"><img src="./assets/images/icon-pro.svg" alt=""><br>
+                                        <div>Pro <p>$15/mo</p>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="switch__container">
+                                    <p id="p1">Monthly</p>
+                                    <input id="switch-shadow" class="switch switch--shadow" type="checkbox">
+                                    <label for="switch-shadow"></label>
+                                    <p id="p2">Yearly</p>
+                                </div>
+                            </div>
+                            <div class="btns">
+                                <input class="gb" type="button" value="Go Back">
+                                <input class="np" type="button" value="Next Step">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="step" id="s3">
+                        <div class="div-steps">
+                            <div class="titulos">
+                                <h1>Pick add-ons</h1>
+                                <p class="info1">Add-ons help anhance your gaming experience.</p>
+                            </div>
+                            <div class="conteudo">
+                                <label class="add-ons" for="online">
+                                    <input type="checkbox" name="online_service" id="online">
+                                    <div>
+                                        <p class="p1">Online_service</p>
+                                        <p class="p2">Access to multiplayer games</p>
+                                    </div>
+                                    <p class="valor">+$1/mo</p>
+                                </label>
+                                <label class="add-ons" for="larger">
+                                    <input type="checkbox" name="larger_storage" id="larger">
+                                    <div>
+                                        <p class="p1">Larger storage</p>
+                                        <p class="p2">Extra 1TB of cloud save</p>
+                                    </div>
+                                    <p class="valor">+$2/mo</p>
+                                </label>
+                                <label class="add-ons" for="customizable">
+                                    <input type="checkbox" name="customizable_profile" id="customizable">
+                                    <div>
+                                        <p class="p1">Customizable Profile</p>
+                                        <p class="p2">Custom theme on your profile</p>
+                                    </div>
+                                    <p class="valor">+$2/mo</p>
+                                </label>
+                            </div>
+                            <div class="btns">
+                                <input class="gb" type="button" value="Go Back">
+                                <input class="np" type="button" value="Next Step">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="step" id="s4">
+                        <div class="div-steps">
+                            <div class="titulos">
+                                <h1>Finishing up</h1>
+                                <p class="info1">Double-check everything looks OK before confiming.</p>
+                            </div>
+                            <div class="conteudo">
+                                <div class="content-resumo">
+                                    <div class="div1">
+                                        <div>
+                                            <p id="arcade">Arcade (Monthly)</p>
+                                            <a href="#">Change</a>
+                                        </div>
+                                        <p>$9/mo</p>
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <p>Online service</p>
+                                        <p class="valor">+$1/mo</p>
+                                    </div>
+                                    <div>
+                                        <p>Large storege</p>
+                                        <p class="valor">+$2/mo</p>
+                                    </div>
+                                </div>
+                                <div class="total">
+                                    <p>Total (per month)</p>
+                                    <p class="valor-total">+$12/mo</p>
+                                </div>
+                            </div>
+                            <div class="btns">
+                                <input class="gb" type="button" value="Go Back">
+                                <input class="confirm" type="submit" value="Confirm">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
